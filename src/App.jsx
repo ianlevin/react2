@@ -45,9 +45,10 @@ const UsersList = () => {
                     <div className="modal-content">
                         <span className="close" onClick={closeModal}>&times;</span>
                         <h2>{selectedUser.name.first} {selectedUser.name.last}</h2>
-                        <p>Age: {selectedUser.dob.age}</p>
                         <p>Email: {selectedUser.email}</p>
-                        <p>Location: {selectedUser.location.city}, {selectedUser.location.country}</p>
+                        <p>Ubicacion: {selectedUser.location.city}, {selectedUser.location.country}</p>
+                        <p>Fecha de nacimiento: {selectedUser.dob.date}</p>
+                        <p>Telefono: {selectedUser.phone}</p>
                     </div>
                 </div>
             )}
