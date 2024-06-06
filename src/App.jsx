@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './style.css';
 
-const UsersList = () => {
+const Users = () => {
     const urlApi = "https://randomuser.me/api/?results=12";
     const [users, setUsers] = useState([]);
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -56,4 +56,4 @@ const UsersList = () => {
     );
 };
 
-export default UsersList;
+export default Users;
